@@ -6,7 +6,7 @@
   "proxy": "http://localhost:3001",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && mv dist ../server/build",
+    "build": "vite build --emptyOutDir",
     "lint": "eslint .",
     "preview": "vite preview"
   },

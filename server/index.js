@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import { openai } from "@ai-sdk/openai";    //comment 
+import { openai } from "@ai-sdk/openai";
 import { streamText } from "ai";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -23,7 +23,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve static files from the React build folder
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "build")));
 
 // Middleware
 app.use(cors());
@@ -106,7 +106,7 @@ app.post("/api/chat", async (req, res) => {
 
 // Catch-all route to serve React app
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 app.listen(PORT, () => {
