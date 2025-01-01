@@ -80,10 +80,14 @@ useEffect(() => {
 
   return (
     <div
+    style={{
+      fontFamily: "Arial, sans-serif",
+      maxWidth: "600px",
+      margin: "0 auto",
+      padding: "10px",
+    }}
     >
-      <div
-       
-      >
+      <div>
         <h1 style={{textAlign: 'center'}}>Surfer Bot</h1>
         <div
           style={{
@@ -91,7 +95,7 @@ useEffect(() => {
             border: "1px solid #ccc",
             padding: "10px",
             marginBottom: "10px",
-            minHeightheight: "31rem",
+            minHeight: "20rem",
             overflowY: "auto",
           }}
         >
@@ -109,6 +113,7 @@ useEffect(() => {
             display: "flex",
             gap: "10px",
             width: "100%",
+            flexWrap: "wrap",
           }}
         >
           <input
@@ -117,10 +122,19 @@ useEffect(() => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type a message..."
-            style={{ flex: 1, fontSize: "1.5rem" }}
+            style={{ 
+              flex: 1,
+              fontSize: "1rem",
+              padding: "10px",
+              minWidth: "70%",
+              boxSizing: "border-box",
+             }}
             disabled={isLoading}
           />
-          <button type="submit" disabled={isLoading} style={{fontSize: "1.5rem"}}>
+          <button type="submit" disabled={isLoading} style={{fontSize: "1rem",
+              padding: "10px",
+              minWidth: "20%",
+              boxSizing: "border-box"}}>
             {isLoading ? "Loading..." : "Submit"}
           </button>
         </form>
