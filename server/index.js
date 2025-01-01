@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import { openai } from "@ai-sdk/openai";
+import { openai } from "@ai-sdk/openai";  //comment
 import { streamText } from "ai";
 import path from "path";
 import { fileURLToPath } from "url";
