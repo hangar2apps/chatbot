@@ -91,8 +91,7 @@ useEffect(() => {
             border: "1px solid #ccc",
             padding: "10px",
             marginBottom: "10px",
-            height: "31rem",
-            width: "55rem",
+            minHeightheight: "31rem",
             overflowY: "auto",
           }}
         >
