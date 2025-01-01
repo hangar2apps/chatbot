@@ -80,7 +80,6 @@ useEffect(() => {
 
   return (
     <div
-     style={{marginLeft: '20rem'}}
     >
       <div
        
