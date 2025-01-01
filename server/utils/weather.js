@@ -4,7 +4,7 @@ import { tool } from "ai";
 // Define the weather tool
 export const weatherTool = tool({
   description:
-    "Get the weather in a location. Example: 'What is the weather in New York?'",
+    "Get the weather in a location. Example: 'What is the weather in New York?' The weather is given in Fahrenheit",
   parameters: z.object({
     location: z.string().describe("The location to get the weather for"),
   }),
