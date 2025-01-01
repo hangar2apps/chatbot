@@ -85,7 +85,7 @@ useEffect(() => {
       <div
        
       >
-        <h1 style={{textAlign: 'center'}}>Chat</h1>
+        <h1 style={{textAlign: 'center'}}>Surfer Bot</h1>
         <div
           style={{
             fontSize: "1.5rem",
