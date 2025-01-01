@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 let dev_link='http://localhost:3001/api/chat'
-let production_link = 'https://surfer-chat-production.up.railway.app/api/chat';
+let production_link = 'https://chatbot-production-b03e.up.railway.app/api/chat';
 const App = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
